@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CrudDish</string>
+    <string name="strContrasenia">Contraseña</string>
+    <string name="strUsuario">Usuario</string>
+    <string name="strDescripcion">Descripción</string>
+    <string name="strId_del_proyecto">Id del Proyecto</string>
+    <string name="strEliminar">Eliminar</string>
+    <string name="strAtras">Atras</string>
+</resources>

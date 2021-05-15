@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="horizontal"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgSplash"
+        android:layout_width="338dp"
+        android:layout_height="102dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:fitsSystemWindows="true"
+        android:src="@drawable/portfolio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgDish"
+        android:layout_width="257dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="140dp"
+        android:fitsSystemWindows="true"
+        android:src="@drawable/dish_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLoginUsuario"
+        android:layout_width="345dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/btn_style"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/strUsuario"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnInvitado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/editTextLoginPassword"
+        android:layout_width="345dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/btn_style"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/strContrasenia"
+        android:inputType="textPersonName"
+        android:password="true"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginUsuario"
+        app:layout_constraintVertical_bias="0.471"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="147dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/btn2_style"
+        android:onClick="screenPanel"
+        android:text="Iniciar sesion"
+        android:textSize="16sp"
+        android:theme="@style/Button.Branded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginUsuario"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="149dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn2_style"
+        android:onClick="screenInicioL"
+        android:text="Cancelar"
+        android:textSize="16sp"
+        android:theme="@style/Button.Branded"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginUsuario" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="147dp"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/btn2_style"
+        android:onClick="registrar"
+        android:text="Registrar"
+        android:textSize="16sp"
+        android:theme="@style/Button.Branded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

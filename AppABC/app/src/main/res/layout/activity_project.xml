@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".ProjectActivity">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="283dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="24dp"
+        android:text="Opciones de usuario"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        android:padding="100px"
+        app:layout_constraintBottom_toTopOf="@+id/btnEliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo">
+
+
+        <TextView
+            android:id="@+id/Id"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:text="ID" />
+
+        <EditText
+            android:id="@+id/txtId"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_style"
+            android:enabled="false" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:text="ProjectName" />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_style" />
+
+        <TextView
+            android:id="@+id/ProjectManager"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:text="ProjectManager" />
+
+        <EditText
+            android:id="@+id/txtProjectManager"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_style" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_style" />
+
+        <TextView
+            android:id="@+id/txtViewDevelopers"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:text="Developers" />
+
+        <EditText
+            android:id="@+id/txtDevelopers"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_style" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="144dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/btn2_style"
+        android:text="Guardar"
+        android:theme="@style/Button.Branded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolver" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="144dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/btn2_style"
+        android:theme="@style/Button.Branded"
+        android:text="Eliminar"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="144dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btn2_style"
+        android:text="Atras"
+        android:theme="@style/Button.Branded"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEliminar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:onClick="screenActualizar"
+    android:theme="@style/Theme.Design.NoActionBar"
+    tools:context=".ListaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="718dp"
+            android:baselineAligned="true"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="635dp"
+                android:baselineAligned="true"
+                android:padding="50px">
+
+
+            </ListView>
+
+            <Button
+                android:id="@+id/btnOpciones"
+                android:layout_width="144dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn2_style"
+                android:text="Opciones" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="146dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/btn2_style"
+            android:baselineAligned="true"
+            android:onClick="screenActualizar"
+            android:text="Actualizar" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
