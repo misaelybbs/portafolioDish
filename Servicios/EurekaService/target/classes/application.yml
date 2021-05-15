@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: eureka-service
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    server:
+      waitTimeinMsWhenSyncEmpty: 0
+
+zuul:
+  prefix: /api
+  routes:
+    register-service:
+      path: /register/**
+      url: http://localhost:9090
+    login-service:
+      path: /login/**
+      url: http://localhost:9091
+    checkuser-service:
+      path: /checkuser/**
+      url: http://localhost:9092
+    crud-service:
+      path: /crud/**
+      url: http://localhost:9093
+    read-service:
+      path: /read/**
+      url: http://localhost:9094
